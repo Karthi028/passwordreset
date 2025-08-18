@@ -1,5 +1,25 @@
 {
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "name": "password-reset",
+  "version": "1.0.0",
+  "description": "password reset ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karthi028/passwordreset.git"
+  },
+  "author": "karthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karthi028/passwordreset/issues"
+  },
+  "homepage": "https://github.com/Karthi028/passwordreset#readme"
 }
