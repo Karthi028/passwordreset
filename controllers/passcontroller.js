@@ -44,7 +44,7 @@ const passcontroller = {
                 to: `${email}`,
                 subject: 'Reset password',
                 html: `<p>You requested a password Reset.Click the below link to reset your Password:</p> 
-                <a href="http://localhost:5173/passwordchange/${randomString}">Reset Password</a>
+                <a href="https://resetpasswordpage.netlify.app/passwordchange/${randomString}">Reset Password</a>
                 <p>If you dint request for a password change..Kindly Ignore this email</p>`
             };
 
