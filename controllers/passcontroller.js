@@ -70,7 +70,7 @@ const passcontroller = {
             
             const user = await User.findOne({ resetPasswordToken: token,resetPasswordExpires: { $gt: Date.now() }})
 
-            if(user === !user || null){
+            if(!user){
                 return res.status(404).json({message:"No user found or Token does not match"})
             }
 
