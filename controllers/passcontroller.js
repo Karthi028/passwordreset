@@ -70,9 +70,10 @@ const passcontroller = {
             
             const user = await User.findOne({ resetPasswordToken: token,resetPasswordExpires: { $gt: Date.now() }})
 
-            if(!user){
+            if(user === !user || null){
                 return res.status(404).json({message:"No user found or Token does not match"})
             }
+
             const hashPassword = await bcrypt.hash(password, 10);
 
             user.password = hashPassword;
@@ -81,9 +82,6 @@ const passcontroller = {
             user.resetPasswordToken = undefined;
 
             await user.save();
-
-
-
             res.status(200).json({ message: "password changed successfully" })
         } catch (error) {
             res.status(500).json({message:"error changing password",error:error.messgae})
