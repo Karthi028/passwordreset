@@ -51,7 +51,8 @@ const authController = {
             res.cookie('token',jwtToken,{
                 httpOnly:true,
                 secure:true,
-                sameSite:'none'
+                sameSite:'none',
+                domain:'resetpasswordpage.netlify.app'
 
             })
 
