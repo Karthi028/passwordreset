@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 const corsOptions = {
-  origin: 'https://passwordreset-dnbd.onrender.com', 
+  origin: 'https://resetpasswordpage.netlify.app', 
   credentials: true, 
 };
 
