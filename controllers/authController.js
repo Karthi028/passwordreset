@@ -50,8 +50,8 @@ const authController = {
 
             res.cookie('token',jwtToken,{
                 httpOnly:true,
-                secure:false,
-                sameSite:'Strict'
+                secure:true,
+                sameSite:'none'
 
             })
 
