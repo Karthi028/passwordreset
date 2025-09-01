@@ -52,7 +52,6 @@ const authController = {
                 httpOnly:true,
                 secure:true,
                 sameSite:'none',
-                domain:'resetpasswordpage.netlify.app'
 
             })
 
